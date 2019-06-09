@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/facturaciondb
+    username: postgres
+    password: postgres
+#    platform: postgresql
+
+server:
+  port: 8082
+  
