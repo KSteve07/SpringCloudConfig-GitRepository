@@ -7,7 +7,7 @@ zuul:
 
     greetings:
 
-      path: /invoice/**
+      path: /invoices/**
 
       serviceId: INVOICE
 
