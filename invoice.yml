@@ -8,3 +8,21 @@ spring:
 server:
   port: 8002
   
+  #configuracion de server de eureka
+eureka:
+  instance:
+    metadataMap:
+      cluster: MYCLUSTER
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+
+#exponiendo la informacion de mi boot
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /actuator
