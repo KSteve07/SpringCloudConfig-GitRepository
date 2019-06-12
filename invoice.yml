@@ -28,3 +28,10 @@ management:
       base-path: /actuator
       
       
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+      
+      
